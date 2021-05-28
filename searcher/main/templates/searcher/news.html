@@ -1,0 +1,108 @@
+{% extends 'searcher/header.html' %}
+{% load static %}
+{% block title %}{{ title }}{% endblock %}
+{% block title2 %}Новости проекта{% endblock %}
+{% block code %}
+					<h6 class="mb-0 text-uppercase">Касаемо разработки</h6>
+					<hr>
+					<div class="row">
+						<div class="col-12 col-lg-6 col-xl-6">
+							<div class="card radius-15">
+								<div class="card-body">
+									<h5 class="card-title">Сайт в разработке</h5>
+									<h6 class="card-subtitle mb-2">Многие функции могут не работать</h6>
+									<p class="text-justify">На данный момент сайт находится в разработке и большинство функций могут не работать, по этому отнеситесь ко всему с пониманием. Разработка сайта ведется одним человеком и любому фидбеку или помощи буду рад. Вы можете оставить заявку на помощ проекту по ссылке снизу если вы хорошо владеете навыками bootstrap, django, UI\UX, разбираетесь как устроено API лиги, а так же JS / Python, либо же если есть желание поддержать финансово, что будет меня еще больше мотивировать в разработке дальнейшего функционала крикайте по ссылкам. Так же готов рассмотреть варианты о сотрудничестве, ссылка так же находится ниже. Спасибо за понимание и приятного пользования =)</p> <a href="#" class="card-link">Ссылка на сотрудничество</a>
+									<a href="#" class="card-link">Помощ проекту</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-lg-6 col-xl-6">
+							<div class="card radius-15">
+								<div class="card-body">
+									<h5 class="card-title">Планы на разработку</h5>
+									<h6 class="card-subtitle mb-2">Что? Где? И для чего?</h6>
+									<p class="text-justify">Что касаемо планов на разработку: Во первых сделать расширенный функционал аналитики данных вашего аккаунта, расчет КПД (Коофициента полезного действия), тонкости ваших игр, над чем стоит поработать, советы для конкретных рангов и для вас лично. Красивый и самое гланое понятный вывод статистики как в графиках так и стандартных данных, расчет вашего скрытого ММР, для любителей ТФТ своя система постоения тактики и голдэффективности на всех этапах игры. И во вторых: Так как риоты отключили свой форум, сделаем его мы, что бы игроки могли общатся между собой, и помогать с проблемами или удобного поиска напарников с сортировкой по уровню игры.</p> <a href="#" class="card-link">Ваши предложения</a>
+									<a href="#" class="card-link">Указать на ошибки сайта</a>
+								</div>
+							</div>
+						</div>
+                    </div>
+						<!---------------------------------------------------------------------------------------------------->
+                            <h6 class="mb-0 text-uppercase">Обновления</h6>
+                                            <hr>
+                            {% for items in news %}
+							<div class="card mm-active">
+								<div class="card-header has-arrow">{{ items.title }}</div>
+								<div class="card-body">
+									<h5 class="card-title">Краткое описание к обнове</h5>
+									<p class="card-text text-justify">{{items.content}}</p>
+                                    <p class="card-text"><small>{{ items.created_at }}</small>
+								</div>
+							</div>
+
+                        {% endfor %}
+
+
+                        <!---------------------------------------------------------------------------------------------------->
+				<!--end page content-->
+		<!--footer -->
+		<div class="footer">
+			<p class="mb-0">Searcher @2021 | Developed By : <a href="" target="_blank">zainllw0w</a>
+			</p>
+		</div>
+		<!-- end footer -->
+			<!--end page-content-wrapper-->
+
+		<!--end page-wrapper-->
+		<!--start overlay-->
+		<div class="overlay toggle-btn-mobile"></div>
+		<!--end overlay-->
+		<!--Start Back To Top Button--> <a href="javaScript:;" class="back-to-top"><i class='bx bxs-up-arrow-alt'></i></a>
+		<!--End Back To Top Button-->
+	</div>
+	<!-- end wrapper -->
+	<!--start switcher-->
+	<div class="switcher-wrapper">
+		<div class="switcher-btn"> <i class='bx bx-cog bx-spin'></i>
+		</div>
+		<div class="switcher-body">
+			<h5 class="mb-0 text-uppercase">Theme Customizer</h5>
+			<hr/>
+			<p class="mb-0">Gaussian Texture</p>
+			  <hr>
+			  
+			  <ul class="switcher">
+				<li id="theme1"></li>
+				<li id="theme2"></li>
+				<li id="theme3"></li>
+				<li id="theme4"></li>
+				<li id="theme5"></li>
+				<li id="theme6"></li>
+			  </ul>
+               <hr>
+			  <p class="mb-0">Gradient Background</p>
+			  <hr>
+			  
+			  <ul class="switcher">
+				<li id="theme7"></li>
+				<li id="theme8"></li>
+				<li id="theme9"></li>
+				<li id="theme10"></li>
+				<li id="theme11"></li>
+				<li id="theme12"></li>
+			  </ul>
+		</div>
+	</div>
+	<!--end switcher-->
+	<!-- JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="{% static 'assets/js/jquery.min.js'%}"></script>
+	<script src="{% static 'assets/js/popper.min.js'%}"></script>
+	<script src="{% static 'assets/js/bootstrap.min.js'%}"></script>
+	<!--plugins-->
+	<script src="{% static 'assets/plugins/simplebar/js/simplebar.min.js'%}"></script>
+	<script src="{% static 'assets/plugins/metismenu/js/metisMenu.min.js'%}"></script>
+	<script src="{% static 'assets/plugins/perfect-scrollbar/js/perfect-scrollbar.js'%}"></script>
+	<!-- App JS -->
+	<script src="{% static 'assets/js/app.js'%}"></script>
+{% endblock %}

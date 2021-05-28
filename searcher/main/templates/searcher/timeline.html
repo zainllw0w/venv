@@ -1,0 +1,206 @@
+{% extends 'searcher/header.html' %}
+{% load static %}
+{% block title %}{{ title }}{% endblock %}
+{% block title2 %}Ход разработки{% endblock %}
+{% block code %}
+					<div class="">
+						<div class="">
+							<div class="container py-2">
+
+							<!--container-->
+							<hr>
+							<div class="container py-2">
+								<h2 class="font-weight-light text-center py-3">Актуальный статус разработки сайта</h2>
+								<!-- timeline item 1 -->
+								<div class="row no-gutters">
+									<div class="col-sm">
+										<!--spacer-->
+									</div>
+									<!-- timeline item 1 center dot -->
+									<div class="col-sm-1 text-center flex-column d-none d-sm-flex">
+										<div class="row h-50">
+											<div class="col">&nbsp;</div>
+											<div class="col">&nbsp;</div>
+										</div>
+										<h5 class="m-2">
+                                <span class="badge badge-pill bg-light border">&nbsp;</span>
+                            </h5>
+										<div class="row h-50">
+											<div class="col border-right">&nbsp;</div>
+											<div class="col">&nbsp;</div>
+										</div>
+									</div>
+									<!-- timeline item 1 event content -->
+									<div class="col-sm py-2">
+										<div class="card radius-15">
+											<div class="card-body">
+												<div class="float-right small">Начало разработки</div>
+												<h4 class="card-title">Первые шаги</h4>
+												<p class="card-text">На этом этапе создаются первые шаблоны сайта, миграции баз данных, стуктуризируется основной концепт проекта. Другими словами посодили саженец</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!--/row-->
+								<!-- timeline item 2 -->
+								<div class="row no-gutters">
+									<div class="col-sm py-2">
+										<div class="card border-white shadow radius-15">
+											<div class="card-body">
+												<div class="float-right small">В разработке</div>
+												<h4 class="card-title">Функционал RIOT API</h4>
+												<p class="card-text">Наверно одна из основных частей сайта без которой смысла нет. Реализация API запросов последуйщая обработка данных и вывод.</p>
+												<button class="btn btn-sm btn-light" type="button" data-target="#t22_details" data-toggle="collapse">Показать детали ▼</button>
+												<div class="collapse border" id="t22_details">
+													<div class="p-2 text-monospace">
+														<div>Получен статус developer RIOT</div>
+														<div>Тестирование запроса: Успешно!</div>
+														<div>Обработка данных: В ходе проектирования</div>
+														<div>Вывод данных: Не осуществляется из за доработки шаблона</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-1 text-center flex-column d-none d-sm-flex">
+										<div class="row h-50">
+											<div class="col border-right">&nbsp;</div>
+											<div class="col">&nbsp;</div>
+										</div>
+										<h5 class="m-2">
+                                <span class="badge badge-pill bg-white">&nbsp;</span>
+                            </h5>
+										<div class="row h-50">
+											<div class="col border-right">&nbsp;</div>
+											<div class="col">&nbsp;</div>
+										</div>
+									</div>
+									<div class="col-sm">
+										<!--spacer-->
+									</div>
+								</div>
+								<!--/row-->
+								<!-- timeline item 3 -->
+								<div class="row no-gutters">
+									<div class="col-sm">
+										<!--spacer-->
+									</div>
+									<div class="col-sm-1 text-center flex-column d-none d-sm-flex">
+										<div class="row h-50">
+											<div class="col border-right">&nbsp;</div>
+											<div class="col">&nbsp;</div>
+										</div>
+										<h5 class="m-2">
+                                <span class="badge badge-pill bg-light border">&nbsp;</span>
+                            </h5>
+										<div class="row h-50">
+											<div class="col border-right">&nbsp;</div>
+											<div class="col">&nbsp;</div>
+										</div>
+									</div>
+									<div class="col-sm py-2">
+										<div class="card radius-15">
+											<div class="card-body">
+												<div class="float-right small">Не приступалось</div>
+												<h4 class="card-title">Реализация аутентицикации</h4>
+												<p>Для того что бы пользователю было легче отслеживать себя и своих друзей будет реализована система регистрации. Авторизовавшись вам будет легче наблюдать за ходом вашего импрува, получать достижения, общатся с другими пользователями. С помощью машинного обучения получать советы и следить за тем какие ошибки у вас возникают</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!--/row-->
+								<!-- timeline item 4 -->
+								<div class="row no-gutters">
+									<div class="col-sm py-2">
+										<div class="card radius-15">
+											<div class="card-body">
+												<div class="float-right small">На этапе проектирования</div>
+												<h4 class="card-title">Переход на хостинг, фикс багов, выход из статуса "Альфы"</h4>
+												<p>Когда будет реализован основной функционал сайта можно будет уже смело говорить что мы чего-то добились и можно уже показывать проект массе. Это уже будет небольшим событием и переход в статус "Открытого Бета тестирования" в которой будет проведена огромная работа по збору отзывов, ошибок и последуйщей реализации таких режимов как ТФТ(ТФТ будет провозится в "Альфе")</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-1 text-center flex-column d-none d-sm-flex">
+										<div class="row h-50">
+											<div class="col border-right">&nbsp;</div>
+											<div class="col">&nbsp;</div>
+										</div>
+										<h5 class="m-2">
+                                <span class="badge badge-pill bg-light border">&nbsp;</span>
+                            </h5>
+										<div class="row h-50">
+											<div class="col">&nbsp;</div>
+											<div class="col">&nbsp;</div>
+										</div>
+									</div>
+									<div class="col-sm">
+										<!--spacer-->
+									</div>
+								</div>
+								<!--/row-->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--end page-content-wrapper-->
+		</div>
+		<!--end page-wrapper-->
+		<!--start overlay-->
+		<div class="overlay toggle-btn-mobile"></div>
+		<!--end overlay-->
+		<!--Start Back To Top Button--> <a href="javaScript:;" class="back-to-top"><i class='bx bxs-up-arrow-alt'></i></a>
+		<!--End Back To Top Button-->
+		<!--footer -->
+		<div class="footer">
+			<p class="mb-0">Searcher @2021 | Developed By : <a href="#" target="_blank">zainllw0w</a>
+			</p>
+		</div>
+		<!-- end footer -->
+	</div>
+	<!-- end wrapper -->
+	<!--start switcher-->
+	<div class="switcher-wrapper">
+		<div class="switcher-btn"> <i class='bx bx-cog bx-spin'></i>
+		</div>
+		<div class="switcher-body">
+			<h5 class="mb-0 text-uppercase">Theme Customizer</h5>
+			<hr/>
+			<p class="mb-0">Gaussian Texture</p>
+			  <hr>
+			  
+			  <ul class="switcher">
+				<li id="theme1"></li>
+				<li id="theme2"></li>
+				<li id="theme3"></li>
+				<li id="theme4"></li>
+				<li id="theme5"></li>
+				<li id="theme6"></li>
+			  </ul>
+               <hr>
+			  <p class="mb-0">Gradient Background</p>
+			  <hr>
+			  
+			  <ul class="switcher">
+				<li id="theme7"></li>
+				<li id="theme8"></li>
+				<li id="theme9"></li>
+				<li id="theme10"></li>
+				<li id="theme11"></li>
+				<li id="theme12"></li>
+			  </ul>
+		</div>
+	</div>
+	<!--end switcher-->
+	<!-- JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="{% static 'assets/js/jquery.min.js'%}"></script>
+	<script src="{% static 'assets/js/popper.min.js'%}"></script>
+	<script src="{% static 'assets/js/bootstrap.min.js'%}"></script>
+	<!--plugins-->
+	<script src="{% static 'assets/plugins/simplebar/js/simplebar.min.js'%}"></script>
+	<script src="{% static 'assets/plugins/metismenu/js/metisMenu.min.js'%}"></script>
+	<script src="{% static 'assets/plugins/perfect-scrollbar/js/perfect-scrollbar.js'%}"></script>
+	<!-- App JS -->
+	<script src="{% static 'assets/js/app.js'%}"></script>
+{% endblock %}
