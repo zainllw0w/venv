@@ -1,3 +1,4 @@
+#dwdw
 {% extends "partials/layout_project.html.tpl" %}
 {% block title %}Projects{% endblock %}
 {% block name %}{{ project.name }}{% endblock %}
